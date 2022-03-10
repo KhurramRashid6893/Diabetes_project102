@@ -8,10 +8,10 @@ def app(diabetes_df):
   st.markdown("<p style = 'color:green;font-size:25px'>Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.There isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help in reducing the impact of diabetes.This Web app will help you to predict whether a person has diabetes or is prone to get diabetes in future by analysing the values of several features using the Decision Tree Classifier.",
   unsafe_allow_html = True)
 
-  with st.expander('View-Full Data-Set'):
+  with st.beta_expander('View-Full Data-Set'):
     st.dataframe(diabetes_df)
 
-  beta_col1, beta_col2, beta_col3 = st.columns(3)
+  beta_col1, beta_col2, beta_col3 = st.beta_columns(3)
     # Add a checkbox in the first column. Display the column names of 'diabetes_df' on the click of checkbox.
   with beta_col1:
     if st.checkbox('Display Column Names'):
