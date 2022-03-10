@@ -3,8 +3,8 @@ import streamlit as st
 # Define a function 'app()' which accepts 'census_df' as an input.
 def app(diabetes_df):
     # Set the title to the home page contents.
-  st.title("Early diabetes prediction web App")
-  st.title('   By Khurram Rashid')
+  st.title("Early diabetes prediction web App,
+                 By Khurram Rashid")
     # Provide a brief description for the web app.
   st.markdown("<p style = 'color:green;font-size:25px'>Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy.There isn’t a cure yet for diabetes, but losing weight, eating healthy food, and being active can really help in reducing the impact of diabetes.This Web app will help you to predict whether a person has diabetes or is prone to get diabetes in future by analysing the values of several features using the Decision Tree Classifier.",
   unsafe_allow_html = True)
