@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run census_app.py
+web: sh setup.sh && streamlit run diabetes_main.py
