@@ -96,7 +96,7 @@ def app(diabetes_df):
 
     elif predictor == 'GridSearchCV Best Tree Classifier':
         if st.button("Predict"):
-            prediction, score = grid_tree_pred(diabetes_df, Glucose, glucose, bp, insulin, bmi, pedigree, age)
+            prediction, score = grid_tree_pred(diabetes_df, glucose, bp, insulin, bmi, pedigree, age)
             st.subheader("Optimised Decision Tree Prediction results:")
             if prediction == 1:
                 st.info("The person either has diabetes or prone to get diabetes")
