@@ -15,7 +15,8 @@ st.set_page_config(page_title = 'Early Diabetes Prediction Web App',
                     )
 
 # Loading the dataset.
-@st.cache()
+#@st.cache()
+@st.cache_data
 def load_data():
     # Load the Diabetes dataset into DataFrame.
 
