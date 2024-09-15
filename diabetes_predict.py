@@ -8,7 +8,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn import tree
 from sklearn import metrics
 
-@st.cache()
+#@st.cache()
+@st.cache_resource
 def d_tree_pred(diabetes_df, glucose, bp, insulin, bmi, pedigree, age):
 	# Split the train and test dataset. 
     feature_columns = list(diabetes_df.columns)
